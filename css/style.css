@@ -1,0 +1,110 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  
+  background-color: #06060D;
+  color: #fff;
+  font-family: "Lato";
+}
+
+
+
+#intro{
+	height: 50%;
+	margin: 25% 0 0 0;
+	transform: translateY(-10%);
+	
+	text-align: center;
+}
+#intro #logo{
+	height: 30%;
+	transition: transform 0.8s ease-in-out;
+}
+#intro #logo:hover{
+	transform: rotate(360deg);
+}
+#intro #name{
+	font-size: 300%;
+	font-weight: bold;
+	color: #dde3e3;
+}
+#intro #sub{
+	color: #588ccb;
+	font-size: 125%;
+}
+
+#projects{
+	height: 100%;
+	margin-top: 15%;
+}
+#projects ul {
+	height: 100%;
+	margin-left: 6%;
+}
+#projects li{
+	height: 25%;
+	width: 25%;
+	margin: 2% 2% 2% 2%;
+	display: inline-block;
+	overflow: hidden;
+	
+	background-color: #eee;
+	border-right: 5px solid #dde3e3;
+	border-bottom: 5px solid #dde3e3;
+}
+#projects li:hover .proj-mask{
+	opacity: 1;
+	transform: translate(0,-250px);
+	transition: all 0.2s ease-in-out;
+}
+#projects li:hover .proj-descr{
+	opacity: 1;
+	transform: translate(0,-250px);
+	transition: all 0.2s ease-in-out;
+}
+.proj-mask{
+	width: 100%;
+	height: 50%;
+	
+	background-color: rgba(115,146,184,0.7);
+	opacity: 0;
+	transform: translate (0,250px);
+	transition: all 0.2s ease-in-out;
+}
+.proj-img{
+	width: 100%;
+}
+.proj-descr{
+	
+	transform: translate (0,250px);
+	transition: all 0.2s ease-in-out;	
+}
+
+
+/* Background shapes */
+
+#white-box{
+	height: 100%;
+	width: 200%;
+	transform: rotate(-45deg);
+	
+	background-color: #fff;
+	border-top: 5px solid #dde3e3;
+}
+
+#arrow{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	right: 6%;
+	bottom: 7%;
+	z-index: 2;
+	transform: rotate(45deg);
+	
+	background-color: #fff;
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;
+}
+#arrow:hover{
+	border-color: #588ccb;
+}
